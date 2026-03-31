@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Denisa Štefanigová</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <!-- HORNÍ ČÁRY -->
+  <div class="lines">
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+  </div>
+
+  <h1>Denisa Štefanigová</h1>
+
+  <!-- HERO -->
+  <div class="hero-image">
+    <img src="images/Denisa_foto.jpg" alt="Portrait">
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- LEVÝ SLOUPEC -->
+    <div class="left-column">
+      <p class="bio">
+        <strong>Denisa Štefanigová (b. 1995)</strong><br><br>
+
+        Czech visual artist and painter based in Brno.  
+        She studied painting in Brno and Estonia.<br><br>
+
+        She has completed residencies in Bilbao, Stuttgart, Graz, Prague and Budapest,
+        and exhibited internationally.<br><br>
+
+        Finalist of the Cyprián Prize (2024) and Young Painter Prize (2021).
+      </p>
+    </div>
+
+    <!-- PRAVÁ POLOVINA -->
+    <div class="right-column">
+
+      <div class="right-inner">
+
+        <!-- MENU -->
+        <div class="small-column">
+          <div class="menu-item active" onclick="showTab('events', event)">
+            Upcoming Events
+          </div>
+
+          <div class="menu-item" onclick="showTab('exhibitions', event)">
+            Exhibitions
+          </div>
+
+          <div class="menu-item" onclick="showTab('about', event)">
+            About
+          </div>
+        </div>
+
+        <!-- OBSAH -->
+        <div class="main-column">
+
+          <!-- EVENTS -->
+          <div id="events" class="tab-content active">
+            <div class="section">
+
+              <div class="event">
+                <div class="event-title">Fragments of Silence</div>
+                <div class="event-date">April 12 – May 30, 2026 · Prague, CZ</div>
+                <p>Exploring memory and absence through layered painting.</p>
+              </div>
+
+              <div class="event">
+                <div class="event-title">Soft Structures</div>
+                <div class="event-date">June 8 – July 20, 2026 · Vienna, AT</div>
+                <p>Group exhibition focused on material fragility.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- EXHIBITIONS -->
+          <div id="exhibitions" class="tab-content">
+            <div class="section">
+
+              <div class="event">
+                <div class="event-title">Gallery Nova</div>
+                <div class="event-date">Prague · 2025</div>
+              </div>
+
+              <div class="event">
+                <div class="event-title">Contemporary Voices</div>
+                <div class="event-date">Vienna · 2024</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ABOUT -->
+          <div id="about" class="tab-content">
+            <div class="section">
+              <p>
+                Denisa Štefanigová is a contemporary painter focused on emotional abstraction.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SLIDER -->
+  <div class="section">
+    <h2>Selected Artworks</h2>
+
+    <div class="slider">
+
+      <div class="slide active">
+        <img src="images/Blue_Horse.png">
+
+        <div class="arrow left" onclick="prevSlide()">‹</div>
+        <div class="arrow right" onclick="nextSlide()">›</div>
+
+        <p class="caption">
+          <strong>Blue Horse</strong><br>
+          80 × 60 cm<br>
+          Oil on canvas, 2025
+        </p>
+      </div>
+
+      <div class="slide">
+        <img src="images/Blue_Horse_room.png">
+
+        <div class="arrow left" onclick="prevSlide()">‹</div>
+        <div class="arrow right" onclick="nextSlide()">›</div>
+
+        <p class="caption">
+          <strong>Blue Horse</strong><br>
+          80 × 60 cm<br>
+          Oil on canvas, 2025
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

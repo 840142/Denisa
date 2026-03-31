@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* horní čáry */
+.lines {
+  width: 100%;
+}
+
+.line {
+  height: 6px;
+  width: 100%;
+}
+
+.line1 { background: #ff4d4d; }
+.line2 { background: #4da6ff; }
+.line3 { background: #66cc66; }
+
+/* title */
+h1 {
+  margin: 30px 0;
+  padding: 10px 0 20px;
+  text-align: center;
+  font-size: 48px;
+}
+
+/* hero */
+.hero-image {
+  text-align: center;
+  margin: 30px 0; /* 🔥 víc prostoru */
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 500px;
+}
+
+/* 🔥 HLAVNÍ ZMĚNA – VELKÉ ODSTUPY */
+.layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 80px;
+  padding: 80px 8vw; /* 🔥 víc nahoře i dole */
+  box-sizing: border-box;
+}
+
+.left-column {
+  flex: 1.2;
+}
+
+.right-column {
+  flex: 1.8;
+}
+
+.right-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.small-column {
+  flex: 0.8;
+  margin-top: 6px;
+}
+
+.main-column {
+  flex: 2;
+}
+
+/* menu */
+.menu-item {
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.menu-item.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* section */
+.section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 0 60px; /* 🔥 víc dole */
+}
+
+.section h2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+/* events */
+.event {
+  margin-bottom: 20px;
+}
+
+.event-title {
+  font-weight: bold;
+}
+
+.event-date {
+  font-size: 13px;
+  color: #666;
+}
+
+/* tabs */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* slider */
+.slider {
+  position: relative;
+  text-align: center;
+  margin-top: 30px; /* 🔥 prostor nad sliderem */
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+}
+
+/* caption */
+.caption {
+  margin-top: 15px;
+  font-size: 14px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 80px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow.left {
+  left: 10px;
+  color: #4da6ff;
+}
+
+.arrow.right {
+  right: 10px;
+  color: #ff4d4d;
+}
+
+.arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+}
